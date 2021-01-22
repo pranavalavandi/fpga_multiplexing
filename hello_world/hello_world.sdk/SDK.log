@@ -1,0 +1,10 @@
+09:18:09 INFO  : Registering command handlers for SDK TCF services
+09:18:10 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\pala8831\Documents\fpga_multiplexing\hello_world\hello_world.sdk\temp_xsdb_launch_script.tcl
+09:18:14 INFO  : XSCT server has started successfully.
+09:18:14 INFO  : Successfully done setting XSCT server connection channel  
+09:18:14 INFO  : Successfully done setting SDK workspace  
+09:18:14 INFO  : Processing command line option -hwspec C:/Users/pala8831/Documents/fpga_multiplexing/hello_world/hello_world.sdk/design_1_wrapper.hdf.
+09:25:22 INFO  : Refreshed build settings on project hello_world
+09:27:24 INFO  : Invoking Bootgen: bootgen -image hello_world.bif -arch zynq -o C:\Users\pala8831\Documents\fpga_multiplexing\hello_world\hello_world.sdk\hello_world\bootimage\BOOT.bin
+09:27:24 INFO  : Creating new bif file C:\Users\pala8831\Documents\fpga_multiplexing\hello_world\hello_world.sdk\hello_world\bootimage\hello_world.bif
+09:27:26 INFO  : Bootgen command execution is done.

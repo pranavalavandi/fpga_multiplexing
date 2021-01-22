@@ -1,0 +1,74 @@
+13:43:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pala8831\Documents\fpga_multiplexing\test_project\temp_xsdb_launch_script.tcl
+13:43:03 INFO  : Registering command handlers for Vitis TCF services
+13:43:07 INFO  : XSCT server has started successfully.
+13:43:07 INFO  : Platform repository initialization has completed.
+13:43:07 INFO  : Successfully done setting XSCT server connection channel  
+13:43:07 INFO  : plnx-install-location is set to ''
+13:43:07 INFO  : Successfully done query RDI_DATADIR 
+13:43:07 INFO  : Successfully done setting workspace for the tool. 
+14:03:03 ERROR : Failed to execute command '{}'
+14:03:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pala8831\Documents\fpga_multiplexing\test_project\temp_xsdb_launch_script.tcl
+14:03:03 INFO  : Registering command handlers for Vitis TCF services
+14:03:06 INFO  : XSCT server has started successfully.
+14:03:06 INFO  : plnx-install-location is set to ''
+14:03:06 INFO  : Successfully done setting XSCT server connection channel  
+14:03:06 INFO  : Successfully done query RDI_DATADIR 
+14:03:06 INFO  : Successfully done setting workspace for the tool. 
+14:03:07 INFO  : Platform repository initialization has completed.
+14:19:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pala8831\Documents\fpga_multiplexing\test_project\temp_xsdb_launch_script.tcl
+14:19:13 INFO  : Registering command handlers for Vitis TCF services
+14:19:13 INFO  : XSCT server has started successfully.
+14:19:14 INFO  : plnx-install-location is set to ''
+14:19:14 INFO  : Successfully done setting XSCT server connection channel  
+14:19:14 INFO  : Successfully done query RDI_DATADIR 
+14:19:14 INFO  : Successfully done setting workspace for the tool. 
+14:19:17 INFO  : Platform repository initialization has completed.
+14:23:03 INFO  : Result from executing command 'getProjects': design_1_wrapper;test_project_platform
+14:23:03 INFO  : Result from executing command 'getPlatforms': 
+14:23:04 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:23:05 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+14:23:25 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+14:31:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:47:09 INFO  : No changes in MSS file content so sources will not be generated.
+14:49:55 INFO  : No changes in MSS file content so sources will not be generated.
+14:56:10 INFO  : Result from executing command 'getProjects': design_1_wrapper;test_project_platform
+14:56:10 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/pala8831/Documents/fpga_multiplexing/test_project/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+14:56:13 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:02:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pala8831\Documents\fpga_multiplexing\test_project\temp_xsdb_launch_script.tcl
+15:02:04 INFO  : XSCT server has started successfully.
+15:02:04 INFO  : plnx-install-location is set to ''
+15:02:04 INFO  : Successfully done setting XSCT server connection channel  
+15:02:04 INFO  : Successfully done setting workspace for the tool. 
+15:02:07 INFO  : Platform repository initialization has completed.
+15:02:08 INFO  : Registering command handlers for Vitis TCF services
+15:02:10 INFO  : Successfully done query RDI_DATADIR 
+15:02:33 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:02:43 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:07:52 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:07:52 INFO  : Result from executing command 'getPlatforms': 
+15:07:52 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:07:53 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:08:12 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:13:00 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:13:00 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/pala8831/Documents/fpga_multiplexing/test_project/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:13:03 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+09:49:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pala8831\Documents\fpga_multiplexing\test_project\temp_xsdb_launch_script.tcl
+09:49:51 INFO  : XSCT server has started successfully.
+09:49:51 INFO  : plnx-install-location is set to ''
+09:49:51 INFO  : Successfully done setting XSCT server connection channel  
+09:49:51 INFO  : Successfully done setting workspace for the tool. 
+09:49:53 INFO  : Successfully done query RDI_DATADIR 
+09:49:57 INFO  : Registering command handlers for Vitis TCF services
+09:49:57 INFO  : Platform repository initialization has completed.
+09:50:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pala8831\Documents\fpga_multiplexing\test_project\temp_xsdb_launch_script.tcl
+09:50:47 INFO  : Registering command handlers for Vitis TCF services
+09:50:49 INFO  : Platform repository initialization has completed.
+09:50:50 INFO  : XSCT server has started successfully.
+09:50:51 INFO  : Successfully done setting XSCT server connection channel  
+09:50:51 INFO  : plnx-install-location is set to ''
+09:50:51 INFO  : Successfully done setting workspace for the tool. 
+09:50:51 INFO  : Successfully done query RDI_DATADIR 
+09:51:52 INFO  : Result from executing command 'getProjects': test_project_platform
+09:51:52 INFO  : Result from executing command 'getPlatforms': 
+09:52:55 INFO  : Result from executing command 'getProjects': test_project_platform
+09:52:55 INFO  : Result from executing command 'getPlatforms': test_project_platform|C:/Users/pala8831/Documents/fpga_multiplexing/test_project/test_project_platform/export/test_project_platform/test_project_platform.xpfm

@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\pala8831\Documents\fpga_multiplexing\hello_world\hello_world.sdk\zynq_fsbl\Debug\zynq_fsbl.elf
+	C:\Users\pala8831\Documents\fpga_multiplexing\hello_world\hello_world.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	C:\Users\pala8831\Documents\fpga_multiplexing\hello_world\hello_world.sdk\hello_world\Debug\hello_world.elf
+}
