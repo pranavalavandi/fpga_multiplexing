@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/pala8831/Documents/fpga_multiplexing/led_blink/led_blink.srcs/constrs_1/new/constraints.xdc rfile:../../../led_blink.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U14 [get_ports CLK_50MHz]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R14 [get_ports LED]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R19 [get_ports reset]

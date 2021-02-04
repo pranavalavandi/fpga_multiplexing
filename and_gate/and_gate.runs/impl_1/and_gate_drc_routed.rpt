@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan 22 16:19:55 2021
+| Date         : Mon Jan 25 14:31:25 2021
 | Host         : W610CS62 running 64-bit major release  (build 9200)
 | Command      : report_drc -file and_gate_drc_routed.rpt -pb and_gate_drc_routed.pb -rpx and_gate_drc_routed.rpx
 | Design       : and_gate
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_and_gate
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

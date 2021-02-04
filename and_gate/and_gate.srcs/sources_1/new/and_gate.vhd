@@ -41,5 +41,5 @@ architecture Behavioral of and_gate is
 
 begin
 
-c <= a AND b;
+c <= a AND b after 2000000000ns;
 end Behavioral;

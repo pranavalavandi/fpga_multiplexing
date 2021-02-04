@@ -1,0 +1,3 @@
+Breakpoint File Version 1.0
+49 true C:/Users/pala8831/Documents/fpga_multiplexing/tutorial_led_blink/tutorial_led_blink.srcs/sim_1/new/tutorial_led_blink_tb.vhd
+52 true C:/Users/pala8831/Documents/fpga_multiplexing/tutorial_led_blink/tutorial_led_blink.srcs/sim_1/new/tutorial_led_blink_tb.vhd

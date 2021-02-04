@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1611292715">
-  <File Type="OPT-HWDEF" Name="and_gate.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="and_gate_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="and_gate.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1611545376">
   <File Type="BITSTR-BMM" Name="and_gate_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="and_gate_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="and_gate_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="and_gate_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="and_gate_reports.tcl"/>
   <File Type="OPT-DRC" Name="and_gate_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="and_gate.hwdef"/>
   <File Type="PWROPT-DCP" Name="and_gate_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="and_gate_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="and_gate_timing_summary_pwropted.rpt"/>
@@ -24,6 +22,7 @@
   <File Type="PLACE-CTRL" Name="and_gate_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="and_gate_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="and_gate_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="and_gate.bgn"/>
   <File Type="PLACE-TIMING" Name="and_gate_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="and_gate_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="and_gate.bin"/>
@@ -53,6 +52,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="and_gate_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="and_gate_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="and_gate_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="and_gate_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="and_gate_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="and_gate_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="and_gate_postroute_physopt.dcp"/>
@@ -66,7 +66,6 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="and_gate_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="and_gate.rbt"/>
   <File Type="BITSTR-NKY" Name="and_gate.nky"/>
-  <File Type="BG-BGN" Name="and_gate.bgn"/>
   <File Type="BG-DRC" Name="and_gate.drc"/>
   <File Type="RDI-RDI" Name="and_gate.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -104,9 +103,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
