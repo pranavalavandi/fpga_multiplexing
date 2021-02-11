@@ -1,0 +1,1 @@
+-wto "f4bf500316674697b34c0b16227e6cac" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "aom_delay_tb_behav" "xil_defaultlib.aom_delay_tb" -log "elaborate.log" 

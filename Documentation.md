@@ -96,3 +96,33 @@ Change `input_signal` and `signal_to_AOM` and the code will work fine.
 
 
 
+### Connecting to the MYIR IO Cape
+
+To find which IO pin on the IO cape corresponds to which pin coordinate in Vivado the following needs to happen.
+
+
+
+The 40 main IO pins correspond to block J3. This can be found on `sheet 2 of 3` in the IO cape schematic. 
+
+1. Let's say we are after pin 40. This corresponds to `IO_B35_LP20`. We need to find the corresponding pin name in the zturn board schematic (not the IO cape schematic)
+2. On `sheet 3 of 16` we have the pin names identical to those given to the pins on the IO cape. 
+3. Looking at Bank 35 we see that `IO_B35_LP20` is connected to pin `K14`. 
+4. This is the pin that should be provided to Vivado when either using the IO pin-planning GUI, or manually writing the `constraints.xdc` file. 
+
+
+
+This can be done for all 40 pins. 
+
+
+
+
+
+
+
+
+
+### Working Code
+
+
+
+The working code is in the project `aom_delay` in the `fpga_multiplexing` folder. 

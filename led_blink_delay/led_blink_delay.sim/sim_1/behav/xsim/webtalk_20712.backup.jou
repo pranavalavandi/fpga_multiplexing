@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  9 13:47:58 2021
+# Process ID: 20712
+# Current directory: C:/Users/pala8831/Documents/fpga_multiplexing/led_blink_delay/led_blink_delay.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/pala8831/Documents/fpga_multiplexing/led_blink_delay/led_blink_delay.sim/sim_1/behav/xsim/xsim.dir/led_blink_delay_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/pala8831/Documents/fpga_multiplexing/led_blink_delay/led_blink_delay.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/pala8831/Documents/fpga_multiplexing/led_blink_delay/led_blink_delay.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/pala8831/Documents/fpga_multiplexing/led_blink_delay/led_blink_delay.sim/sim_1/behav/xsim/xsim.dir/led_blink_delay_tb_behav/webtalk/xsim_webtalk.tcl -notrace

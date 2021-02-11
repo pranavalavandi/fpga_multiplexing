@@ -1,0 +1,176 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Feb 11 20:25:31 2021
+| Host         : W610CS62 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file aom_delay_methodology_drc_routed.rpt -pb aom_delay_methodology_drc_routed.pb -rpx aom_delay_methodology_drc_routed.rpx
+| Design       : aom_delay
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 28
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 1          |
+| TIMING-20 | Warning  | Non-clocked latch            | 27         |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell signal_out_reg_i_10, with 2 or more inputs, drives asynchronous preset/clear pin(s) counter_reg[0]/CLR, counter_reg[10]/CLR, counter_reg[11]/CLR, counter_reg[12]/CLR, counter_reg[13]/CLR, counter_reg[14]/CLR, counter_reg[15]/CLR, counter_reg[16]/CLR, counter_reg[17]/CLR, counter_reg[18]/CLR, counter_reg[19]/CLR, counter_reg[1]/CLR, counter_reg[20]/CLR, counter_reg[21]/CLR, counter_reg[22]/CLR (the first 15 of 27 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch counter_reg[0] cannot be properly analyzed as its control pin counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch counter_reg[10] cannot be properly analyzed as its control pin counter_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch counter_reg[11] cannot be properly analyzed as its control pin counter_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch counter_reg[12] cannot be properly analyzed as its control pin counter_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch counter_reg[13] cannot be properly analyzed as its control pin counter_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch counter_reg[14] cannot be properly analyzed as its control pin counter_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch counter_reg[15] cannot be properly analyzed as its control pin counter_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch counter_reg[16] cannot be properly analyzed as its control pin counter_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch counter_reg[17] cannot be properly analyzed as its control pin counter_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch counter_reg[18] cannot be properly analyzed as its control pin counter_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch counter_reg[19] cannot be properly analyzed as its control pin counter_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch counter_reg[1] cannot be properly analyzed as its control pin counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch counter_reg[20] cannot be properly analyzed as its control pin counter_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch counter_reg[21] cannot be properly analyzed as its control pin counter_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch counter_reg[22] cannot be properly analyzed as its control pin counter_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch counter_reg[23] cannot be properly analyzed as its control pin counter_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch counter_reg[24] cannot be properly analyzed as its control pin counter_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch counter_reg[25] cannot be properly analyzed as its control pin counter_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch counter_reg[2] cannot be properly analyzed as its control pin counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch counter_reg[3] cannot be properly analyzed as its control pin counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch counter_reg[4] cannot be properly analyzed as its control pin counter_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch counter_reg[5] cannot be properly analyzed as its control pin counter_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch counter_reg[6] cannot be properly analyzed as its control pin counter_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch counter_reg[7] cannot be properly analyzed as its control pin counter_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch counter_reg[8] cannot be properly analyzed as its control pin counter_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch counter_reg[9] cannot be properly analyzed as its control pin counter_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch signal_out_reg cannot be properly analyzed as its control pin signal_out_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

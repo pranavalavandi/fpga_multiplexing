@@ -1,7 +1,7 @@
-Running: xsim.dir/led_blink_delay_tb_behav/xsimk.exe -simmode gui -wdb led_blink_delay_tb_behav.wdb -simrunnum 0 -socket 53593
+Running: xsim.dir/led_blink_delay_tb_behav/xsimk.exe -simmode gui -wdb led_blink_delay_tb_behav.wdb -simrunnum 0 -socket 52205
 Design successfully loaded
-Design Loading Memory Usage: 6320 KB (Peak: 6320 KB)
-Design Loading CPU Usage: 62 ms
+Design Loading Memory Usage: 6316 KB (Peak: 6316 KB)
+Design Loading CPU Usage: 61 ms
 Simulation completed
-Simulation Memory Usage: 6908 KB (Peak: 6908 KB)
+Simulation Memory Usage: 6896 KB (Peak: 6896 KB)
 Simulation CPU Usage: 93 ms

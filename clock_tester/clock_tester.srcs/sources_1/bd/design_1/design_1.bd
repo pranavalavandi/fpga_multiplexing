@@ -8,13 +8,13 @@
       "tool_version": "2019.1"
     },
     "design_tree": {
-      "led_blink_delay_0": "",
       "processing_system7_0": "",
-      "rst_ps7_0_100M": "",
+      "led_blink_delay_0": "",
       "axi_gpio_0": "",
       "ps7_0_axi_periph": {
         "s00_couplers": {}
-      }
+      },
+      "rst_ps7_0_100M": ""
     },
     "interface_ports": {
       "DDR": {
@@ -30,35 +30,18 @@
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       }
     },
-    "components": {
-      "led_blink_delay_0": {
-        "vlnv": "xilinx.com:module_ref:led_blink_delay:1.0",
-        "xci_name": "design_1_led_blink_delay_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "led_blink_delay",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "reset": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "led": {
-            "direction": "O"
-          },
-          "delay_switch": {
-            "direction": "I"
-          }
-        }
+    "ports": {
+      "sw_1": {
+        "direction": "I"
       },
+      "sw_2": {
+        "direction": "I"
+      }
+    },
+    "components": {
       "processing_system7_0": {
         "vlnv": "xilinx.com:ip:processing_system7:5.5",
-        "xci_name": "design_1_processing_system7_0_0",
+        "xci_name": "design_1_processing_system7_0_1",
         "parameters": {
           "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
             "value": "500.000000"
@@ -204,14 +187,8 @@
           "PCW_ENET0_PERIPHERAL_FREQMHZ": {
             "value": "1000 Mbps"
           },
-          "PCW_ENET0_RESET_ENABLE": {
-            "value": "0"
-          },
           "PCW_ENET_RESET_ENABLE": {
-            "value": "1"
-          },
-          "PCW_ENET_RESET_SELECT": {
-            "value": "Share reset pin"
+            "value": "0"
           },
           "PCW_EN_CAN0": {
             "value": "1"
@@ -336,9 +313,6 @@
           "PCW_I2C0_PERIPHERAL_ENABLE": {
             "value": "1"
           },
-          "PCW_I2C0_RESET_ENABLE": {
-            "value": "0"
-          },
           "PCW_I2C1_GRP_INT_ENABLE": {
             "value": "0"
           },
@@ -352,10 +326,7 @@
             "value": "83.333336"
           },
           "PCW_I2C_RESET_ENABLE": {
-            "value": "1"
-          },
-          "PCW_I2C_RESET_SELECT": {
-            "value": "Share reset pin"
+            "value": "0"
           },
           "PCW_MIO_0_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -826,10 +797,10 @@
             "value": "54"
           },
           "PCW_MIO_TREE_PERIPHERALS": {
-            "value": "GPIO#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#GPIO#Quad SPI Flash#GPIO#UART 0#UART 0#I2C 1#I2C 1#CAN 0#CAN 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#UART 1#UART 1#GPIO#USB Reset#Enet 0#Enet 0"
+            "value": "GPIO#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#GPIO#Quad SPI Flash#GPIO#UART 0#UART 0#I2C 1#I2C 1#CAN 0#CAN 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0"
           },
           "PCW_MIO_TREE_SIGNALS": {
-            "value": "gpio[0]#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#gpio[7]#qspi_fbclk#gpio[9]#rx#tx#scl#sda#rx#tx#tx_clk#txd[0]#txd[1]#txd[2]#txd[3]#tx_ctl#rx_clk#rxd[0]#rxd[1]#rxd[2]#rxd[3]#rx_ctl#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#clk#cmd#data[0]#data[1]#data[2]#data[3]#cd#wp#tx#rx#gpio[50]#reset#mdc#mdio"
+            "value": "gpio[0]#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#gpio[7]#qspi_fbclk#gpio[9]#rx#tx#scl#sda#rx#tx#tx_clk#txd[0]#txd[1]#txd[2]#txd[3]#tx_ctl#rx_clk#rxd[0]#rxd[1]#rxd[2]#rxd[3]#rx_ctl#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#clk#cmd#data[0]#data[1]#data[2]#data[3]#cd#wp#tx#rx#gpio[50]#gpio[51]#mdc#mdio"
           },
           "PCW_PACKAGE_DDR_BOARD_DELAY0": {
             "value": "0.089"
@@ -1053,20 +1024,11 @@
           "PCW_USB0_PERIPHERAL_ENABLE": {
             "value": "1"
           },
-          "PCW_USB0_RESET_ENABLE": {
-            "value": "1"
-          },
-          "PCW_USB0_RESET_IO": {
-            "value": "MIO 51"
-          },
           "PCW_USB0_USB0_IO": {
             "value": "MIO 28 .. 39"
           },
           "PCW_USB_RESET_ENABLE": {
-            "value": "1"
-          },
-          "PCW_USB_RESET_SELECT": {
-            "value": "Share reset pin"
+            "value": "0"
           },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
@@ -1079,13 +1041,34 @@
           }
         }
       },
-      "rst_ps7_0_100M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_rst_ps7_0_100M_0"
+      "led_blink_delay_0": {
+        "vlnv": "xilinx.com:module_ref:led_blink_delay:1.0",
+        "xci_name": "design_1_led_blink_delay_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "led_blink_delay",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O"
+          },
+          "delay_switch": {
+            "direction": "I"
+          }
+        }
       },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "design_1_axi_gpio_0_1",
+        "xci_name": "design_1_axi_gpio_0_2",
         "parameters": {
           "GPIO_BOARD_INTERFACE": {
             "value": "rgb_led"
@@ -1097,7 +1080,7 @@
       },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_name": "design_1_ps7_0_axi_periph_0",
+        "xci_name": "design_1_ps7_0_axi_periph_1",
         "parameters": {
           "NUM_MI": {
             "value": "1"
@@ -1256,25 +1239,23 @@
             ]
           }
         }
+      },
+      "rst_ps7_0_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_rst_ps7_0_100M_1"
       }
     },
     "interface_nets": {
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "rgb_led",
           "axi_gpio_0/GPIO"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
+      "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
+          "ps7_0_axi_periph/M00_AXI",
+          "axi_gpio_0/S_AXI"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -1283,10 +1264,16 @@
           "ps7_0_axi_periph/S00_AXI"
         ]
       },
-      "ps7_0_axi_periph_M00_AXI": {
+      "processing_system7_0_DDR": {
         "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "axi_gpio_0/S_AXI"
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -1295,12 +1282,24 @@
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "led_blink_delay_0/clk",
-          "rst_ps7_0_100M/slowest_sync_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
+          "rst_ps7_0_100M/slowest_sync_clk",
           "axi_gpio_0/s_axi_aclk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK"
+        ]
+      },
+      "sw_1_1": {
+        "ports": [
+          "sw_1",
+          "led_blink_delay_0/delay_switch"
+        ]
+      },
+      "sw_2_1": {
+        "ports": [
+          "sw_2",
+          "led_blink_delay_0/reset"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1312,7 +1311,6 @@
       "rst_ps7_0_100M_peripheral_aresetn": {
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
-          "led_blink_delay_0/reset",
           "ps7_0_axi_periph/S00_ARESETN",
           "axi_gpio_0/s_axi_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",

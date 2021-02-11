@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 11 16:51:50 2021
+# Process ID: 21432
+# Current directory: C:/Users/pala8831/Documents/fpga_multiplexing/aom_delay/aom_delay.runs/impl_1
+# Command line: vivado.exe -log aom_delay.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source aom_delay.tcl -notrace
+# Log file: C:/Users/pala8831/Documents/fpga_multiplexing/aom_delay/aom_delay.runs/impl_1/aom_delay.vdi
+# Journal file: C:/Users/pala8831/Documents/fpga_multiplexing/aom_delay/aom_delay.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source aom_delay.tcl -notrace
