@@ -36,7 +36,6 @@ entity aom_delay is
   		non_delay : out std_logic
   );
 end aom_delay;
-
 architecture Behavioral of aom_delay is
 
 signal delay_counter : std_logic_vector (24 downto 0); 
