@@ -46,31 +46,10 @@ begin
 
 
 	delay: process (clk)
---	variable counter : integer range 0 to 1000000002 := 1;
---	variable max_counter : integer := 1000000000;
+
 	variable counter : integer range 0 to 41111113 := 1;
 	variable max_counter : integer := 41111111;
 	begin
---		if reset = '1' then
---			delay_counter <=  (others => '0');
---			turn_off_counter <= (others => '0');
---			signal_out <= '1';
-
---		end if;
-	
-	
---		if delay_switch = '1' then
---			if counter < max_counter then
---				counter := counter + 1;
---				out_delayed <= '1';
---			else
---				signal_out <= out_delayed;
---			end if;
-				
---		else
---			signal_out <= '0';
---		end if;
-	
 	
 			
 		if delay_switch = '1' then
@@ -87,52 +66,6 @@ begin
 
 
 
---if delay_switch = '1' then
---	if rising_edge (clk) then
---		if counter = 240000 then
---			switch_out <= '1';
---		elsif counter < 240000 then
---			switch_out <= '0';
---			counter := counter + 1;
---		end if;
---	end if;
---elsif  delay_switch = '0' then
---	switch_out <= delay_switch;
---	counter := 0;
---end if;
-
---		if rising_edge (clk) then
---			if delay_switch = '1' then
---				if delay_counter < 	"0000000111010100110000000" then
---					switch_out <= '0';
---				else 
---					switch_out <= '1';
---				end if;
---				delay_counter <= delay_counter + 1;
---			elsif delay_switch = '0' then
---				switch_out <= '0';
---				delay_counter <= "0000000000000000000000000";
---			end if;
---		end if;
-
---		if delay_switch = '1' then
---			if rising_edge (clk) then
-----				if delay_counter < "0000000011111111111111111" then
---				if delay_counter < "0000000111010100110000000" then
-----				if delay_counter < "0000000000000000000001000" then
-----				if delay_counter  < "1011011100011011000000000" then -- 10 second
---					delay_counter <= delay_counter + 1;
---					switch_out <= '0';
---				else
-----					delay_counter <= (others => '0');
---					switch_out <= '1';
---				end if;
---			end if;
---		elsif delay_switch = '0' then
---			switch_out <= '0';
---			delay_counter <= "0000000000000000000000000";
-
---		end if;
 	
 	end process delay;
 
