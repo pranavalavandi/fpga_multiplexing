@@ -43,26 +43,32 @@ This is the process template to delay the sending of an output signal once an in
 First here is an example to indicate what's going on.
 
 ```vhdl
-delay: process (clk, delay_switch)
+-- signal signal_out : std_logic;	
+
+
+delay: process (clk)
+    variable counter : integer range 0 41111112 := 1;
+	variable max_counter : integer := 41111111;
+
 	begin
-	
-		if delay_switch = '1' then
-			if rising_edge (clk) then
-				if delay_counter  < "1011011100011011000000000" then
-					delay_counter <= delay_counter + 1;
-				else
-					delay_counter <= (others => '0');
-					switch_out <= '1';
-				end if;
-			end if;
+        if delay_switch = '1' then
+            if counter < max_counter then
+                counter := counter+1;
+        	else
+                signal_out <= '0';
+        	end if;
+        elsif delay_switch <= '0' then
+            signal_out <= '1';
+            counter := 0;
 		end if;
-	
 	end process delay;
 ```
 
 
 
-What this example does is, it waits for the `delay_switch` to be turned on. Open which it starts a counter. The period between each increment for the counter is given by the clock speed. Once the counter is finished, `switch_out` is set to 1. `switch_out` is the switch that controls the LED (in this example) and hence the LED turns on after the delay
+What this example does is, it waits for the `delay_switch` to be turned on. Open which it starts a counter. The period between each increment for the counter is given by the clock speed. On each clock cycle the process is executed, and consequently the counter is incremented.
+
+Once the counter is finished, `signal_out` is set to 1. `signal_out` is the switch that controls the LED (in this example) and hence the LED turns on after the delay. Since `signal_out` is just a signal, it can be mapped to whichever output port is defined in the entity description of the relevant VHDL file. 
 
 
 
@@ -71,28 +77,26 @@ What this example does is, it waits for the `delay_switch` to be turned on. Open
 The corresponding template for the above would be 
 
 ```vhdl
-delay: process (clk, input_signal)
+-- signal signal_out : std_logic;	
+
+
+delay: process (clk)
+    variable counter : integer range 0 <time_of_delay/clock_speed>+1 := 1;
+	variable max_counter : integer := time_of_delay/clock_speed 
+
 	begin
-	
-		if delay_switch = '1' then
-			if rising_edge (clk) then
-				if delay_counter  < "Time_delay/clock_speed in binary" then
-					delay_counter <= delay_counter + 1;
-				else
-					delay_counter <= (others => '0');
-					signal_to_AOM <= '1';
-				end if;
-			end if;
+        if delay_switch = '1' then
+            if counter < max_counter then
+                counter := counter+1;
+        	else
+                signal_out <= '0';
+        	end if;
+        elsif delay_switch <= '0' then
+            signal_out <= '1';
+            counter := 0;
 		end if;
-	
 	end process delay;
 ```
-
-
-
-Change `input_signal` and `signal_to_AOM` and the code will work fine.
-
-
 
 
 
@@ -126,3 +130,19 @@ This can be done for all 40 pins.
 
 
 The working code is in the project `aom_delay` in the `fpga_multiplexing` folder. 
+
+
+
+### Clock Synchronisation
+
+Goal was to synchronise the zturn board with the master FPGA. However this FPGA does not have a dedicated clock input.
+
+As such we tried to use a general IO pin as a dedicated clock input. As shown in the below three figures we can see that the clock signal breaks down as a increase the frequency, making it unfeasible to use.
+
+
+
+![image-20210304111243424](C:\Users\pala8831\AppData\Roaming\Typora\typora-user-images\image-20210304111243424.png)![image-20210304111249621](C:\Users\pala8831\AppData\Roaming\Typora\typora-user-images\image-20210304111249621.png)
+
+
+
+Here the yellow curve is the input clock signal, given from a signal generator, and the green curve is the the clock signal that the FPGA is 'experiencing'.
