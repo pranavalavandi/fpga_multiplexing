@@ -141,7 +141,9 @@ As such we tried to use a general IO pin as a dedicated clock input. As shown in
 
 
 
-![image-20210304111243424](C:\Users\pala8831\AppData\Roaming\Typora\typora-user-images\image-20210304111243424.png)![image-20210304111249621](C:\Users\pala8831\AppData\Roaming\Typora\typora-user-images\image-20210304111249621.png)
+![](C:\Users\pala8831\Documents\fpga_multiplexing\readme_images\image-20210304111243424.png)
+
+![image-20210304111249621](C:\Users\pala8831\Documents\fpga_multiplexing\readme_images\image-20210304111249621.png)
 
 
 
